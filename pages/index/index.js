@@ -4,13 +4,36 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    title:'Walters 国际洗衣',
+    banners: [
+      {
+        id: 1,
+        url: "http://lc-hK5jtX4E.cn-n1.lcfile.com/b2bf2144e280b4f97e9d.jpeg"
+      },
+      {
+        id: 5,
+        url: 'http://lc-hK5jtX4E.cn-n1.lcfile.com/7659acfdb0e93ad22e3a.jpeg'
+      },
+      {
+        id: 6,
+        url: 'http://lc-hK5jtX4E.cn-n1.lcfile.com/6d92881d6ecf1b1d2d4c.jpeg'
+      },
+      {
+        id: 2,
+        url: "http://lc-hK5jtX4E.cn-n1.lcfile.com/fd1a9369e689e2afde96.jpeg"
+      },
+      {
+        id: 3,
+        url: "http://lc-hK5jtX4E.cn-n1.lcfile.com/d8bcdae05f2819922cf1.jpg"
+      },
+      {
+        id: 4,
+        url: "http://lc-hK5jtX4E.cn-n1.lcfile.com/457445abb018c3f40030.jpg"
+      }
+    ],
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
@@ -21,7 +44,7 @@ Page({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -43,7 +66,7 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
+  getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({

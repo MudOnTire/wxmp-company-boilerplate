@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.4.1",
 	"appid": "wx66c9eead71c38b37",
-	"projectname": "new-wxmp",
+	"projectname": "wxmp-company-boilerplate",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
