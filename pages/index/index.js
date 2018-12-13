@@ -191,7 +191,7 @@ Page({
     const colCount = categories.length % 2 === 0 ? categories.length / 2 : categories.length / 2 + 1;
     const longitude = 113.105210;
     const latitude = 39.817400;
-    const address = '山西怀仁市神隆生活广场美食街口威斯特洗护馆';
+    const address = '山西怀仁市神隆生活广场美食街口维斯特洗护馆';
     this.setData({
       leftCates: categories.slice(0, colCount),
       rightCates: categories.slice(colCount),
