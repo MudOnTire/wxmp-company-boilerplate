@@ -28,7 +28,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80rpx;
+  margin-top: 14rpx;
+  height: 100rpx;
+  color:#008A94;
+}
+
+.left-bar,.right-bar{
+  height: 4rpx;
+  background-color: #008A94;
+  width: 140rpx;
+  margin: 0 20rpx;
 }
 
 .cate-title>.main{

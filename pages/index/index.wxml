@@ -23,8 +23,10 @@
     </swiper-item>
   </swiper>
   <view class='cate-title'>
+    <view class='left-bar'/>
     <text class="main">衣物分类</text>
-    <text class="tip">单位（元）</text>
+    <text class="tip">单位：元</text>
+    <view class='right-bar'/>
   </view>
   <view class="categories">
     <view class="cate-column">
