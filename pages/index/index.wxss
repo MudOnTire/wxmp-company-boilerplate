@@ -115,3 +115,10 @@
   padding: 6rpx 0;
   color: white;
 }
+
+.about-img{
+  width: 94%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
