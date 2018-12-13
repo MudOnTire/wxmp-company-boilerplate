@@ -5,128 +5,153 @@ const app = getApp()
 Page({
   data: {
     title: 'Walters 国际洗衣',
-    icons: [
-      {
-        "index": 0,
-        "name": "领带.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/fa5b9ded70aa565f34ce.png"
-      },
+    categories: [
       {
         "index": 1,
-        "name": "针织衫.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/c1e439cc2b69c8f66c7d.png"
+        "name": "西装",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/38001dadee1992fe232b.png",
+        "price": "16"
       },
       {
         "index": 2,
-        "name": "西装.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/38001dadee1992fe232b.png"
+        "name": "西裤",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/e6db4a14aba4a170176f.png",
+        "price": "11"
       },
       {
         "index": 3,
-        "name": "真丝裙.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/9434f4faf439cba2b8a5.png"
+        "name": "衬衣/马甲",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/990c9d310336046a0b12.png",
+        "price": "10"
       },
       {
         "index": 4,
-        "name": "休闲外套.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/09b233cac05dbbc585fa.png"
+        "name": "领带",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/fa5b9ded70aa565f34ce.png",
+        "price": "10"
       },
       {
         "index": 5,
-        "name": "羊毛／羊绒衫.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/cbed179a99fb6c328842.png"
+        "name": "羊绒/毛呢衣",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/c734d7708b4090f333b2.png",
+        "price": "35/45/50"
       },
       {
         "index": 6,
-        "name": "羊绒／毛呢衣.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/c734d7708b4090f333b2.png"
+        "name": "羽绒服/棉服",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/3aa68b13b554f92c98d2.png",
+        "price": "30/40/45"
       },
       {
         "index": 7,
-        "name": "婚纱／礼服.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/6e71d02972b63f379889.png"
+        "name": "风衣",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/0cd15e18b5ee0b0805d0.png",
+        "price": "25/35/40"
       },
       {
         "index": 8,
-        "name": "毛呢裤.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/f163c73a5b55d67985ab.png"
+        "name": "针织衫",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/c1e439cc2b69c8f66c7d.png",
+        "price": "15/25"
       },
       {
         "index": 9,
-        "name": "风衣.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/0cd15e18b5ee0b0805d0.png"
+        "name": "羊毛/羊绒衫",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/cbed179a99fb6c328842.png"
       },
       {
         "index": 10,
-        "name": "防寒服.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/aef9eca17fac89da63e2.png"
+        "name": "休闲外套",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/09b233cac05dbbc585fa.png",
+        "price": "16"
       },
       {
         "index": 11,
-        "name": "连衣裙（夏）.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/5b07ab83953405645a90.png"
+        "name": "真丝上衣",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/38386ea6019db2985dfa.png",
+        "price": "15"
       },
       {
         "index": 12,
-        "name": "短裤.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/56acc03d626b8fe54bf1.png"
+        "name": "防寒服",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/aef9eca17fac89da63e2.png",
+        "price": "30起"
       },
       {
         "index": 13,
-        "name": "西裤.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/e6db4a14aba4a170176f.png"
+        "name": "卫衣",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/6f035814d45e1a7e6c8c.png",
+        "price": "15/20"
       },
       {
         "index": 14,
-        "name": "休闲裤.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/eb8c3a86948d680ac6fd.png"
+        "name": "T恤",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/afd26e738ea397954597.png",
+        "price": "10"
       },
       {
         "index": 15,
-        "name": "百褶裙.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/bc413ab3d745acc98000.png"
+        "name": "休闲裤",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/eb8c3a86948d680ac6fd.png",
+        "price": "11"
       },
       {
         "index": 16,
-        "name": "卫衣.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/6f035814d45e1a7e6c8c.png"
+        "name": "短裤",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/56acc03d626b8fe54bf1.png",
+        "price": "8"
       },
       {
         "index": 17,
-        "name": "睡衣／真丝.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/8e7e945506b99f77c6d9.png"
+        "name": "百褶裙",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/bc413ab3d745acc98000.png",
+        "price": "15/20/25"
       },
       {
         "index": 18,
-        "name": "羽绒服／棉服.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/3aa68b13b554f92c98d2.png"
+        "name": "连衣裙（夏）",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/5b07ab83953405645a90.png",
+        "price": "20/30"
       },
       {
         "index": 19,
-        "name": "衬衣／马甲.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/990c9d310336046a0b12.png"
+        "name": "真丝裙",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/9434f4faf439cba2b8a5.png",
+        "price": "30/25/40"
       },
       {
         "index": 20,
-        "name": "T恤.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/afd26e738ea397954597.png"
+        "name": "羊毛裙",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/fab2754587e73d2c36dd.png",
+        "price": "25/30/35"
       },
       {
         "index": 21,
-        "name": "真丝上衣.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/38386ea6019db2985dfa.png"
+        "name": "毛呢裤",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/f163c73a5b55d67985ab.png",
+        "price": "20"
       },
       {
         "index": 22,
-        "name": "羊毛裙.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/fab2754587e73d2c36dd.png"
+        "name": "睡衣/真丝",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/8e7e945506b99f77c6d9.png",
+        "price": "30/45"
       },
       {
         "index": 23,
-        "name": "旗袍／唐装.png",
-        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/1b54373d565c810a9576.png"
+        "name": "婚纱/礼服",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/6e71d02972b63f379889.png",
+        "price": "80-200"
+      },
+      {
+        "index": 24,
+        "name": "旗袍/唐装",
+        "url": "http://lc-hK5jtX4E.cn-n1.lcfile.com/1b54373d565c810a9576.png",
+        "price": "50起"
       }
     ],
+    leftCates: [],
+    rightCates: [],
     banners: [
       {
         id: 1,
@@ -161,39 +186,13 @@ Page({
     })
   },
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
-  getUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+    const { categories } = this.data;
+    console.log(categories);
+    const colCount = categories.length % 2 === 0 ? categories.length / 2 : categories.length / 2 + 1;
+    console.log(categories.slice(0, colCount));
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+      leftCates: categories.slice(0, colCount),
+      rightCates: categories.slice(colCount)
+    });
   }
 })

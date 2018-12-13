@@ -23,3 +23,46 @@
   width: 100%;
   text-align: center;
 }
+
+.categories{
+  display: flex;
+  width: 100%;
+}
+
+.cate-column{
+  flex: 1;
+  margin: 10rpx;
+}
+
+.category{
+  display: flex;
+  height: 60rpx;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+}
+
+.category.odd{
+  background: rgba(210, 214, 234, 0.2);
+}
+
+.category.even{
+  background: rgba(178, 210, 221, 0.5);
+}
+
+.cate-icon{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+}
+
+.cate-name{
+  font-size: 28rpx;
+  flex: 3;
+}
+
+.cate-price{
+  font-size: 24rpx;
+  flex: 2;
+}

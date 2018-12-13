@@ -1,3 +1,17 @@
+<!-- templates -->
+<template name="cate-content">
+  <image class="cate-icon" src="{{item.url}}" />
+  <text class="cate-name">{{item.name}}</text>
+  <text class="cate-price">{{item.price}}</text>
+</template>
+<template name="cate-item">
+  <view wx:if="{{item.index % 2===0}}" class="category even">
+    <template is="cate-content" data="{{item}}"></template>
+  </view>
+  <view wx:else class="category odd">
+    <template is="cate-content" data="{{item}}"></template>
+  </view>
+</template>
 <!-- index.wxml -->
 <view class="container">
   <text class="title">{{title}}</text>
@@ -8,4 +22,12 @@
       </navigator>
     </swiper-item>
   </swiper>
+  <view class="categories">
+    <view class="cate-column">
+      <template is="cate-item" wx:for="{{leftCates}}" wx:key="{{item.index}}" data="{{item}}" />
+    </view>
+    <view class="cate-column">
+      <template is="cate-item" wx:for="{{rightCates}}" wx:key="{{item.index}}" data="{{item}}" />
+    </view>
+  </view>
 </view>
