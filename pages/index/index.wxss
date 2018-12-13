@@ -24,7 +24,7 @@
   text-align: center;
 }
 
-.cate-title{
+.section-title{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,16 +36,16 @@
 .left-bar,.right-bar{
   height: 4rpx;
   background-color: #008A94;
-  width: 140rpx;
+  width: 100rpx;
   margin: 0 20rpx;
 }
 
-.cate-title>.main{
+.section-title>.main{
   font-size: 40rpx;
   line-height: 20rpx;
 }
 
-.cate-title>.tip{
+.section-title>.tip{
   font-size: 20rpx;
   padding-left: 18rpx;
 }
@@ -95,4 +95,23 @@
 
 .hint{
   font-size: 26rpx;
+}
+
+.about-title{
+  margin-top: 40rpx;
+}
+
+.about{
+  font-size: 26rpx;
+  padding: 0rpx 20rpx;
+}
+
+.about .sub-title{
+  font-size: 30rpx;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #20BDBF;
+  padding: 6rpx 0;
+  color: white;
 }
