@@ -178,6 +178,7 @@ Page({
         url: "http://lc-hK5jtX4E.cn-n1.lcfile.com/457445abb018c3f40030.jpg"
       }
     ],
+    shopInfo: {}
   },
   //事件处理函数
   bindViewTap: function () {
@@ -187,12 +188,31 @@ Page({
   },
   onLoad: function () {
     const { categories } = this.data;
-    console.log(categories);
     const colCount = categories.length % 2 === 0 ? categories.length / 2 : categories.length / 2 + 1;
-    console.log(categories.slice(0, colCount));
+    const longitude = 113.105210;
+    const latitude = 39.817400;
+    const address = '山西怀仁市神隆生活广场美食街口威斯特洗护馆';
     this.setData({
       leftCates: categories.slice(0, colCount),
-      rightCates: categories.slice(colCount)
+      rightCates: categories.slice(colCount),
+      shopInfo: {
+        address,
+        longitude,
+        latitude,
+        markers: [{
+          title: address,
+          longitude,
+          latitude,
+          iconPath: '/static/images/marker_red.png',
+          iconTapPath: '/static/images/marker_red.png',
+          callout: {
+            content: address,
+            color: '#616263',
+            fontSize: 16,
+            padding: 12
+          }
+        }]
+      }
     });
   }
 })

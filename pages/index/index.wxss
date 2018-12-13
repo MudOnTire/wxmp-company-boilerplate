@@ -122,3 +122,34 @@
   margin: 0 auto;
   margin-top: 40rpx;
 }
+
+.contact-item{
+  display: flex;
+  font-size: 28rpx;
+  color: #555;
+  padding: 6rpx 0;
+}
+
+.contact-icon{
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.contact-content{
+  flex: 1;
+}
+
+.location-title .main{
+  font-size: 30rpx;
+}
+
+.map-container {
+  padding: 15rpx;
+  height: 800rpx;
+  width: 100%;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
