@@ -24,6 +24,23 @@
   text-align: center;
 }
 
+.cate-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+}
+
+.cate-title>.main{
+  font-size: 40rpx;
+  line-height: 20rpx;
+}
+
+.cate-title>.tip{
+  font-size: 20rpx;
+  padding-left: 18rpx;
+}
+
 .categories{
   display: flex;
   width: 100%;
@@ -65,4 +82,8 @@
 .cate-price{
   font-size: 24rpx;
   flex: 2;
+}
+
+.hint{
+  font-size: 26rpx;
 }

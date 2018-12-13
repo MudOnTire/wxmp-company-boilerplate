@@ -22,6 +22,10 @@
       </navigator>
     </swiper-item>
   </swiper>
+  <view class='cate-title'>
+    <text class="main">衣物分类</text>
+    <text class="tip">单位（元）</text>
+  </view>
   <view class="categories">
     <view class="cate-column">
       <template is="cate-item" wx:for="{{leftCates}}" wx:key="{{item.index}}" data="{{item}}" />
@@ -30,4 +34,5 @@
       <template is="cate-item" wx:for="{{rightCates}}" wx:key="{{item.index}}" data="{{item}}" />
     </view>
   </view>
+  <text class='hint'>注：奢侈品除外，根据衣物价格酌情收费</text>
 </view>
