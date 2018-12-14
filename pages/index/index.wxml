@@ -96,27 +96,29 @@
   </text>
   <image class='about-img' src="http://lc-hK5jtX4E.cn-n1.lcfile.com/bb40a86a012507f78489.jpg" />
   <!-- contact -->
-  <view class='section-title'>
-    <view class='left-bar' />
-    <text class="main">联系我们</text>
-    <view class='right-bar' />
-  </view>
-  <view class='contact-item'>
-    <image class="contact-icon" src="http://lc-hK5jtX4E.cn-n1.lcfile.com/5e033c20d6dd50dce05f.png" />： 
-    <text class='contact-content'>邢秀平</text>
-  </view>
-  <view class='contact-item'>
-    <image class="contact-icon" src="http://lc-hK5jtX4E.cn-n1.lcfile.com/f235b3b42ed015c07621.png" />： 
-    <text class='contact-content'>18603496372，19903496372</text>
-  </view>
-  <view class='contact-item'>
-    <image class="contact-icon" src="http://lc-hK5jtX4E.cn-n1.lcfile.com/b7cbb70dd81116c24ee3.png" />： 
-    <text class='contact-content'>山西怀仁市神隆生活广场美食街口威斯特洗护馆</text>
-  </view>
-  
-  <!-- location -->
-  <view class='section-title location-title'>
-    <text class="main">我们的位置</text>
+  <view style='text-align:center'>
+    <view class='section-title'>
+      <view class='left-bar' />
+      <text class="main">联系我们</text>
+      <view class='right-bar' />
+    </view>
+    <view class='contact-item'>
+      <image class="contact-icon" src="http://lc-hK5jtX4E.cn-n1.lcfile.com/5e033c20d6dd50dce05f.png" />： 
+      <text class='contact-content'>邢秀平</text>
+    </view>
+    <view class='contact-item'>
+      <image class="contact-icon" src="http://lc-hK5jtX4E.cn-n1.lcfile.com/f235b3b42ed015c07621.png" />： 
+      <text class='contact-content'>18603496372，19903496372</text>
+    </view>
+    <view class='contact-item'>
+      <image class="contact-icon" src="http://lc-hK5jtX4E.cn-n1.lcfile.com/b7cbb70dd81116c24ee3.png" />： 
+      <text class='contact-content'>山西怀仁市神隆生活广场美食街口威斯特洗护馆</text>
+    </view>
+    
+    <!-- location -->
+    <view class='section-title location-title'>
+      <text class="main">我们的位置</text>
+    </view>
   </view>
   <view class="map-container">
     <map class="map" longitude="{{shopInfo.longitude}}" latitude="{{shopInfo.latitude}}" scale="18" show-location="true" markers="{{shopInfo.markers}}" ></map>
